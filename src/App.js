@@ -4,6 +4,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
+import PrivateRoute from './components/authentication/PrivateRoute';
 import LandingPage from './components/home/LandingPage';
 import SignIn from './components/authentication/SignIn';
 import SignOut from './components/authentication/SignOut';
@@ -22,7 +23,7 @@ class App extends Component {
           <Route exact path="/" component={LandingPage} />
           <Route exact path="/signin" component={SignIn} />
           <Route exact path="/signout" component={SignOut} />
-          <Route exact path="/people" component={People} />
+          <PrivateRoute exact path="/people" component={People} />
         </Switch>
         </div>
 

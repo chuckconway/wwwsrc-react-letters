@@ -2,10 +2,11 @@ import React from 'react';
 
 const SignIn = () => {
     return (
-        <div style={{maxWidth:300}}>
+        <div >
             <h1>SignIn</h1>
             <div className="row">
-                <div className="col-md-12">
+                <div className="col-md-4"></div>
+                <div className="col-md-4">
                     <div className="form-group">
                         <label htmlFor="">Username</label>
                         <input type="text" className="form-control" />
@@ -13,11 +14,14 @@ const SignIn = () => {
                         <input type="text" className="form-control" />
                     </div>
                 </div>
+                <div className="col-md-4"></div>
             </div>
             <div className="row">
-                <div className="col-md-12">
+                <div className="col-md-4"></div>
+                <div className="col-md-4">
                     <button type="button" className="btn btn-primary float-right">Sign In</button>
                 </div>
+                <div className="col-md-4"></div>
             </div>
         </div>)
 };
